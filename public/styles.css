@@ -1,0 +1,509 @@
+/* styles.css */
+
+/* Font Face */
+@font-face {
+    font-family: 'CHERL___';
+    src: url('fonts/CHERL___.TTF') format('truetype');
+    font-weight: 500;
+    /* Adjust the weight value */
+    font-style: normal;
+}
+
+/* Colors */
+:root {
+    --main-background-color: #c499ff;
+    --main-text-color: #000000;
+    --button-border-color: #5555cc;
+    --button-hover-scale: 1.1;
+}
+
+/* Keyframes */
+@keyframes extend {
+    0% {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+
+    10%,
+    20% {
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    100% {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin-left: 0px;
+    }
+}
+
+@keyframes disappear {
+    20% {
+        color: #fff;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+
+    70%,
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appearPhoto {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* General Styles */
+body {
+    font-family: 'CHERL___', sans-serif;
+    font-size: 19px;
+    /* Adjust the font size */
+    font-weight: 600;
+    /* Adjust the font weight */
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+    margin: 0;
+    line-height: 1;
+    /* Adjust the line height for better readability */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background: linear-gradient(to right, #5555cc 50%, #180133 50%);
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 65px;
+    text-decoration:wavy;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    margin: 0;
+}
+
+h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1::before {
+    left: -25%;
+}
+
+h1::after {
+    right: -25%;
+}
+
+/* Section Styles */
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Button Styles */
+button {
+    width: 250px;
+    height: 120px;
+    font-size: 18px;
+    color: #002747;
+    border-radius: 45px;
+    border: 4px solid var(--button-border-color);
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+button:hover {
+    transform: scale(var(--button-hover-scale));
+}
+
+button span {
+    display: block;
+    position: relative;
+    z-index: 1;
+    animation: appear 0s ease-in-out forwards;
+}
+
+button .heartImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 160px;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+button.selected {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+button:focus>span {
+    animation: disappear 1s ease-in-out forwards;
+}
+
+button:focus>.heartImage {
+    animation: appearPhoto 1s ease-in-out forwards;
+}
+
+/* Photo Circle Styles */
+#photoCircle {
+    position: fixed;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #c499ff;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    transition: transform 5s, opacity 1s;
+    animation: appearPhoto 1.5s ease-in-out forwards;
+}
+
+#photoCircle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button:focus~#photoCircle {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+/* Selected Heart Text Styles */
+button.selected~#photoCircle {
+    display: 1;
+}
+
+/* Decorative Hearts Styles */
+.hearts {
+    position: absolute;
+    top: 16%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/*photo 2 */
+
+#photoCircle2 {
+        position: fixed;
+        top: 79%;
+        right: 5%;
+        transform: translate(-50%, -50%) scale(0);
+        background: #c499ff;
+        border-radius: 50%;
+        overflow: hidden;
+        opacity: 0;
+        z-index: 1;
+        width: 300px;
+        height: 300px;
+        transition: transform 5s, opacity 1s;
+        animation: appearPhoto 1.5s ease-in-out forwards;
+}
+
+#photoCircle2 img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjust the animation duration and easing function as needed */
+@keyframes appearPhoto2 {
+    0% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+}
+
+
+
+button.selected~#photoCircle2 {
+    display: 1;
+}
+
+
+.hearts img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+}
+
+
+.container {
+    height: 650px;
+    width: 650px;
+    border-radius: 0%;
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
+    z-index: 800;
+}
+
+
+
+.snowfall {
+    background: url(https://i.imgur.com/T0mBFg2.png);
+    background-size: 400px 250px;
+    background-repeat: repeat;
+    height: 1080px;
+    width: 1920px;
+    position: fixed;
+    bottom: 455px;
+    border-radius: 0%;
+    animation: snowfall 9s linear forwards infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        background-position: 0 0;
+    }
+
+    20% {
+        background-position: 20px 20px;
+    }
+
+    40% {
+        background-position: 40px 40px;
+    }
+
+    60% {
+        background-position: 60px 60px;
+    }
+
+    80% {
+        background-position: 80px 80px;
+    }
+
+    100% {
+        background-position: 100px 100px;
+    }
+}
+
+.highlight-gradient {
+    
+            border-radius: 30px;
+            padding: 45px 20px;
+            background-image: linear-gradient(90deg, rgba(246, 224, 255, 0) 0%, rgba(246, 224, 255, 1) 25%, rgba(254, 185, 251, 1) 50%, rgba(148, 237, 255, 1) 75%, rgba(148, 237, 255, 0) 100%);
+        }
+
+
+
+
+/* Envelop */
+
+/* Envelope Design */
+.letter-image {
+    position: fixed;
+    bottom: 50px;
+    /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.animated-mail {
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    transition: 0.5s;
+
+    .body {
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 100px 200px;
+        border-color: transparent transparent #e95f55 transparent;
+        z-index: 2;
+    }
+
+    .top-fold {
+        position: absolute;
+        top: 50px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 50px 100px 0 100px;
+        transform-origin: 50% 0%;
+        transition: transform 0.4s, z-index 0.2s;
+        border-color: #cf4a43 transparent transparent transparent;
+        z-index: 2;
+    }
+
+    .back-fold {
+        position: absolute;
+        bottom: 0;
+        width: 200px;
+        height: 100px;
+        background: #cf4a43;
+        z-index: 0;
+    }
+
+    .left-fold {
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 50px 0 50px 100px;
+        border-color: transparent transparent transparent #e15349;
+        z-index: 2;
+    }
+
+    .letter {
+        left: 20px;
+        bottom: 0px;
+        position: absolute;
+        width: 160px;
+        height: 60px;
+        background: white;
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.5s 0.5s;
+
+        .letter-border {
+            height: 10px;
+            width: 100%;
+            background: repeating-linear-gradient(-45deg, #cb5a5e, #cb5a5e 8px, transparent 8px, transparent 18px);
+        }
+
+                .letter-title {
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    height: 10px;
+                    width: 100%;
+                    /* Adjust the width as needed */
+                    white-space: nowrap;
+                    /* Prevent text from wrapping */
+                    background: #cb5a5e;
+                }
+
+        .letter-context {
+            margin-top: 10px;
+            margin-left: 5px;
+            height: 10px;
+            width: 20%;
+            background: #cb5a5e;
+        }
+
+        .letter-stamp {
+            margin-top: 30px;
+            margin-left: 120px;
+            border-radius: 100%;
+            height: 30px;
+            width: 30px;
+            background: #cb5a5e;
+            opacity: 0.5;
+        }
+    }
+}
+
+.shadow {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    width: 400px;
+    height: 30px;
+    transition: 0.4s;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+}
+
+.envelope-title {
+    position: relative;
+    font-style: italic;
+    bottom: 2px;
+    left: 70%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    opacity: 1;
+}
+
+.phone-number {
+    position: absolute;
+    bottom: 100px;
+    left: 55%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+
+.letter-image:hover .animated-mail {
+    transform: translateY(50px);
+}
+
+.letter-image:hover .animated-mail .top-fold {
+    transition: transform 0.5s, z-index 0.2s;
+    transform: rotateX(180deg);
+    z-index: 0;
+}
+
+.letter-image:hover .animated-mail .letter {
+    height: 180px;
+}
+
+.letter-image:hover .shadow {
+    width: 250px;
+}
+
+.letter-image:hover .envelope-title {
+    opacity: 0;
+}
+
+.letter-image:hover .phone-number {
+    opacity: 1;
+}
