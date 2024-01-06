@@ -4,7 +4,6 @@
   "description": "Jay liked a girl named Julia while working at timmies drive thru. This was his way of proposing her.",
   "main": "app.js",
   "scripts": {
-    "start": "app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
