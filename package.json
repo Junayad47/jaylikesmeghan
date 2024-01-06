@@ -4,11 +4,10 @@
   "description": "Jay liked a girl named Julia while working at timmies drive thru. This was his way of proposing her.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jay",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
