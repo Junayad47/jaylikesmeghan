@@ -555,7 +555,7 @@ button.selected~#photoCircle2 {
 
     #photoCircle2 {
         bottom: 60px; /* Adjust top position to avoid overlapping header */
-        right: -10px;
+        right: -20px;
     }
 
     
@@ -580,10 +580,10 @@ button.selected~#photoCircle2 {
     .letter-image {
         width: 30px;
         /* Adjust envelope width for small screens */
-        height: 25px;
+        height: 20px;
         /* Adjust envelope height for small screens */
         position: absolute;
-        bottom: 20px;
+        bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -600,12 +600,12 @@ button.selected~#photoCircle2 {
     }
 
     .letter-image:hover .animated-mail .letter {
-        height: 20px;
+        height: 15px;
         /* Adjust letter height for small screens */
     }
 
     .shadow {
-        width: 30px;
+        width: 35px;
         bottom: 10px;
         /* Adjust shadow width for small screens */
     }
