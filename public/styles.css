@@ -514,13 +514,14 @@ button.selected~#photoCircle2 {
 /* Media Queries for Responsive Design */
 
 /* Small screens (phones) */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 600px) {
     body {
         font-size: 14px;
     }
 
     header {
         height: 60px;
+        width: 100%;
         /* Adjust header height for small screens */
     }
 
