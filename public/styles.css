@@ -582,7 +582,18 @@ button.selected~#photoCircle2 {
         /* Adjust envelope width for small screens */
         height: 50px;
         /* Adjust envelope height for small screens */
-        position: fixed;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .letter-image {
+        width: 50px;
+        /* Adjust envelope width for small screens */
+        height: 50px;
+        /* Adjust envelope height for small screens */
+        position: absolute;
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
@@ -611,7 +622,7 @@ button.selected~#photoCircle2 {
 
     .envelope-title {
         font-size: 12px;
-        position: absolute;
+        position: fixed;
         bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
@@ -621,8 +632,8 @@ button.selected~#photoCircle2 {
     .phone-number {
         font-size: 12px;
         /* Adjust phone number font size for small screens */
-        position: absolute;
-        bottom: 40px;
+        position: fixed;
+        bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
     }
