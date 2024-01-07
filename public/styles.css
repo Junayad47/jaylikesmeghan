@@ -588,17 +588,6 @@ button.selected~#photoCircle2 {
         transform: translateX(-50%);
     }
 
-    .letter-image {
-        width: 300px;
-        /* Adjust envelope width for small screens */
-        height: 25px;
-        /* Adjust envelope height for small screens */
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
     .letter-image:hover .animated-mail {
         transform: translateY(10px);
         /* Adjust envelope animation translation for small screens */
