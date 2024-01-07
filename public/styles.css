@@ -544,7 +544,7 @@ button.selected~#photoCircle2 {
         /* Adjust photo circle width for small screens */
         height: 100px;
         /* Adjust photo circle height for small screens */
-        position: fixed;
+        position: absolute;
         z-index: 2; /* Ensure photo circles are above other elements */
     }
 
@@ -555,7 +555,7 @@ button.selected~#photoCircle2 {
 
     #photoCircle2 {
         bottom: 60px; /* Adjust top position to avoid overlapping header */
-        right: 1px;
+        left: 30px;
     }
 
     
