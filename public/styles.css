@@ -511,7 +511,7 @@ button.selected~#photoCircle2 {
 
 /*dsss */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     body {
         font-size: 14px;
     }
@@ -522,7 +522,7 @@ button.selected~#photoCircle2 {
     }
 
     h1 {
-        font-size: 26px;
+        font-size: 25px;
         ;
         /* Adjust h1 font size for small screens */
     }
@@ -571,13 +571,13 @@ button.selected~#photoCircle2 {
         height: 50px;
         /* Adjust envelope height for small screens */
         position: fixed;
-        bottom: 30px;
+        bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .letter-image:hover .animated-mail {
-        transform: translateY(20px);
+        transform: translateY(15px);
         /* Adjust envelope animation translation for small screens */
     }
 
@@ -588,17 +588,20 @@ button.selected~#photoCircle2 {
     }
 
     .letter-image:hover .animated-mail .letter {
-        height: 50px;
+        height: 40px;
         /* Adjust letter height for small screens */
     }
 
     .shadow {
-        width: 30px;
+        width: 15px;
         /* Adjust shadow width for small screens */
     }
 
     .envelope-title {
         font-size: 12px;
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
         /* Adjust envelope title font size for small screens */
     }
 
@@ -606,7 +609,7 @@ button.selected~#photoCircle2 {
         font-size: 12px;
         /* Adjust phone number font size for small screens */
         position: fixed;
-        bottom: 40px;
+        bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
     }
