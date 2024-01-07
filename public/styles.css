@@ -511,70 +511,18 @@ button.selected~#photoCircle2 {
 
 /*dsss */
 
-@media only screen and (max-width: 394px) {
+@media only screen and (max-width: 600px) {
     body {
-        font-size: 14px;
-        /* Adjust the font size for mobile devices */
-    }
-
-    header {
-        height: auto;
+        font-size: 16px;
     }
 
     h1 {
-        font-size: 30px;
-        /* Adjust the font size for mobile devices */
+        font-size: 40px;
     }
 
     button {
-        width: 80%;
-        /* Adjust button width for better mobile display */
-        height: 60px;
-        /* Adjust button height for better mobile display */
-        font-size: 16px;
-        /* Adjust button font size for better mobile display */
+        width: 150px;
     }
 
-    #photoCircle,
-    #photoCircle2 {
-        width: 80%;
-        /* Adjust photo circle width for better mobile display */
-        height: 80vw;
-        /* Adjust photo circle height for better mobile display */
-    }
-
-    .letter-image {
-        bottom: 10px;
-        /* Adjust the distance from the bottom for mobile devices */
-        width: 100px;
-        /* Adjust envelope width for mobile devices */
-        height: 100px;
-        /* Adjust envelope height for mobile devices */
-    }
-
-    .animated-mail {
-        height: 80px;
-    }
-
-    .shadow {
-        top: 120px;
-        width: 120px;
-    }
-
-    .envelope-title,
-    .phone-number {
-        font-size: 14px;
-        /* Adjust font size for mobile devices */
-    }
+    /* Add more specific styles for small screens as needed */
 }
-
-/* Tablet Styles */
-@media only screen and (min-width: 395px) and (max-width: 1024px) {
-    /* Add tablet-specific styles if needed */
-}
-
-/* Landscape Tablet Styles */
-@media only screen and (min-width: 395px) and (max-width: 1024px) and (orientation: landscape) {
-    /* Add landscape tablet-specific styles if needed */
-}
-
