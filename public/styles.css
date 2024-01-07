@@ -555,7 +555,7 @@ button.selected~#photoCircle2 {
 
     #photoCircle2 {
         bottom: 60px; /* Adjust top position to avoid overlapping header */
-        right: 60px;
+        right: 5px;
     }
 
     #photoCircle img,
