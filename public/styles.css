@@ -555,11 +555,20 @@ button.selected~#photoCircle2 {
 
     #photoCircle2 {
         bottom: 60px; /* Adjust top position to avoid overlapping header */
-        right: 5px;
+        right: 1px;
     }
 
-    #photoCircle img,
+    
     #photoCircle2 img {
+        width: 100%;
+        /* Ensure the photo inside the circle takes up the full width */
+        height: 100%;
+        object-fit: cover;
+        border-radius: 49%;
+        /* Ensure the photo is circular */
+    }
+
+    #photoCircle img {
         width: 100%;
         /* Ensure the photo inside the circle takes up the full width */
         height: 100%;
