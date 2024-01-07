@@ -81,7 +81,7 @@ body {
     color: var(--main-text-color);
     background-color: var(--main-background-color);
     margin: 0;
-    line-height: 1;
+    line-height: 1.1;
     /* Adjust the line height for better readability */
 }
 
@@ -93,6 +93,7 @@ header {
     background: linear-gradient(to right, #5555cc 50%, #180133 50%);
     color: #fff;
     text-align: center;
+    position: relative;
 }
 
 h1 {
@@ -109,7 +110,7 @@ h1 {
 h1::before,
 h1::after {
     content: '';
-    position: absolute;
+    position: relative;
     width: 20%;
     height: 3px;
     background-color: #fff;
@@ -184,7 +185,7 @@ button:focus>.heartImage {
 
 /* Photo Circle Styles */
 #photoCircle {
-    position: fixed;
+    position: relative;
     top: 80%;
     left: 20%;
     transform: translate(-50%, -50%) scale(0);
