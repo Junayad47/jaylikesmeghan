@@ -513,7 +513,7 @@ button.selected~#photoCircle2 {
 
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     header {
@@ -522,15 +522,15 @@ button.selected~#photoCircle2 {
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 26px;
         ;
         /* Adjust h1 font size for small screens */
     }
 
     button {
-        width: 100px;
+        width: 130px;
         /* Adjust button width for small screens */
-        height: 80px;
+        height: 85px;
         /* Adjust button height for small screens */
         font-size: 13px;
         /* Adjust button font size for small screens */
@@ -546,13 +546,13 @@ button.selected~#photoCircle2 {
     }
 
     #photoCircle {
-        top: 15px;
-        left: 10px;
+        top: 5px;
+        left: 15px;
     }
 
     #photoCircle2 {
-        top: 15px;
-        right: 10px;
+        top: 5px;
+        right: 20px;
     }
 
     #photoCircle img,
