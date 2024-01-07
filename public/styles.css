@@ -512,6 +512,7 @@ button.selected~#photoCircle2 {
 /*dsss */
 
 /* Media Queries for Responsive Design */
+
 /* Small screens (phones) */
 @media only screen and (max-width: 600px) {
     body {
@@ -519,23 +520,30 @@ button.selected~#photoCircle2 {
     }
 
     header {
-        height: 60px; /* Adjust header height for small screens */
+        height: 60px;
+        /* Adjust header height for small screens */
     }
 
     h1 {
-        font-size: 25px; /* Adjust h1 font size for small screens */
+        font-size: 25px; /* Remove the extra semicolon */
+        /* Adjust h1 font size for small screens */
     }
 
     button {
-        width: 130px; /* Adjust button width for small screens */
-        height: 85px; /* Adjust button height for small screens */
-        font-size: 13px; /* Adjust button font size for small screens */
+        width: 130px;
+        /* Adjust button width for small screens */
+        height: 85px;
+        /* Adjust button height for small screens */
+        font-size: 13px;
+        /* Adjust button font size for small screens */
     }
 
     #photoCircle,
     #photoCircle2 {
-        width: 100px; /* Adjust photo circle width for small screens */
-        height: 100px; /* Adjust photo circle height for small screens */
+        width: 100px;
+        /* Adjust photo circle width for small screens */
+        height: 100px;
+        /* Adjust photo circle height for small screens */
         position: absolute;
         z-index: 2; /* Ensure photo circles are above other elements */
     }
@@ -550,17 +558,41 @@ button.selected~#photoCircle2 {
         right: 1px;
     }
 
-    #photoCircle img,
+    
     #photoCircle2 img {
-        width: 100%; /* Ensure the photo inside the circle takes up the full width */
+        width: 100%;
+        /* Ensure the photo inside the circle takes up the full width */
         height: 100%;
         object-fit: cover;
-        border-radius: 50%; /* Ensure the photo is circular */
+        border-radius: 49.5%;
+        /* Ensure the photo is circular */
+    }
+
+    #photoCircle img {
+        width: 100%;
+        /* Ensure the photo inside the circle takes up the full width */
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        /* Ensure the photo is circular */
     }
 
     .letter-image {
-        width: 150px; /* Adjust envelope width for small screens */
-        height: 150px; /* Adjust envelope height for small screens */
+        width: 30px;
+        /* Adjust envelope width for small screens */
+        height: 25px;
+        /* Adjust envelope height for small screens */
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .letter-image {
+        width: 300px;
+        /* Adjust envelope width for small screens */
+        height: 25px;
+        /* Adjust envelope height for small screens */
         position: absolute;
         bottom: 20px;
         left: 50%;
@@ -568,7 +600,8 @@ button.selected~#photoCircle2 {
     }
 
     .letter-image:hover .animated-mail {
-        transform: translateY(10px); /* Adjust envelope animation translation for small screens */
+        transform: translateY(10px);
+        /* Adjust envelope animation translation for small screens */
     }
 
     .letter-image:hover .animated-mail .top-fold {
@@ -578,12 +611,14 @@ button.selected~#photoCircle2 {
     }
 
     .letter-image:hover .animated-mail .letter {
-        height: 20px; /* Adjust letter height for small screens */
+        height: 20px;
+        /* Adjust letter height for small screens */
     }
 
     .shadow {
-        width: 30px; /* Adjust shadow width for small screens */
+        width: 30px;
         bottom: 10px;
+        /* Adjust shadow width for small screens */
     }
 
     .envelope-title {
@@ -596,11 +631,11 @@ button.selected~#photoCircle2 {
     }
 
     .phone-number {
-        font-size: 12px; /* Adjust phone number font size for small screens */
+        font-size: 12px;
+        /* Adjust phone number font size for small screens */
         position: absolute;
         bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
     }
 }
-
