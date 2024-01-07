@@ -622,7 +622,7 @@ button.selected~#photoCircle2 {
         /* Adjust phone number font size for small screens */
         position: absolute;
         bottom: 30px;
-        left: 70%;
+        left: 100%;
         transform: translateX(-50%);
     }
 }
