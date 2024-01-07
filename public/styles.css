@@ -522,7 +522,7 @@ button.selected~#photoCircle2 {
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 26px;
         ;
         /* Adjust h1 font size for small screens */
     }
@@ -546,13 +546,13 @@ button.selected~#photoCircle2 {
     }
 
     #photoCircle {
-        bottom: 1px;
-        right: 1px;
+        top: 5px;
+        left: 10px;
     }
 
     #photoCircle2 {
         top: 5px;
-        right: 20px;
+        right: 10px;
     }
 
     #photoCircle img,
