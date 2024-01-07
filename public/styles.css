@@ -582,7 +582,7 @@ button.selected~#photoCircle2 {
         height: 20px; /* Adjust envelope height for small screens */
         position: absolute;
         bottom: 20px;
-        left: 20%;
+        left: 30%;
         transform: translateX(-50%);
     }
 
@@ -622,7 +622,7 @@ button.selected~#photoCircle2 {
         /* Adjust phone number font size for small screens */
         position: absolute;
         bottom: 30px;
-        left: 50%;
+        left: 70%;
         transform: translateX(-50%);
     }
 }
