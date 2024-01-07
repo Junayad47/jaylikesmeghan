@@ -521,7 +521,6 @@ button.selected~#photoCircle2 {
 
     header {
         height: 60px;
-        width: 100%;
         /* Adjust header height for small screens */
     }
 
@@ -556,7 +555,7 @@ button.selected~#photoCircle2 {
 
     #photoCircle2 {
         bottom: 60px; /* Adjust top position to avoid overlapping header */
-        right: 1px;
+        right: -10px;
     }
 
     
