@@ -549,13 +549,13 @@ button.selected~#photoCircle2 {
     }
 
     #photoCircle {
-        top: 70px; /* Adjust top position to avoid overlapping header */
-        left: 10px;
+        bottom: 60px; /* Adjust top position to avoid overlapping header */
+        left: 30px;
     }
 
     #photoCircle2 {
-        top: 70px; /* Adjust top position to avoid overlapping header */
-        right: 10px;
+        bottom: 60px; /* Adjust top position to avoid overlapping header */
+        right: 15px;
     }
 
     #photoCircle img,
