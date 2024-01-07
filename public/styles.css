@@ -514,7 +514,7 @@ button.selected~#photoCircle2 {
 /* Media Queries for Responsive Design */
 
 /* Small screens (phones) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 560px) {
     body {
         font-size: 14px;
     }
