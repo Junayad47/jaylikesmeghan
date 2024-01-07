@@ -616,14 +616,14 @@ button.selected~#photoCircle2 {
     }
 
     .shadow {
-        width: 15px;
+        width: 30px;
         /* Adjust shadow width for small screens */
     }
 
     .envelope-title {
         font-size: 12px;
         position: absolute;
-        bottom: 40px;
+        bottom: 3px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1; /* Ensure the envelope title is below the photo circles */
