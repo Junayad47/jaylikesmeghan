@@ -532,8 +532,19 @@ button.selected~#photoCircle2 {
 
     #photoCircle,
     #photoCircle2 {
-        width: 150px; /* Adjust photo circle width for small screens */
-        height: 150px; /* Adjust photo circle height for small screens */
+        width: 100px; /* Adjust photo circle width for small screens */
+        height: 100px; /* Adjust photo circle height for small screens */
+        position: fixed;
+    }
+
+    #photoCircle {
+        top: 10px;
+        left: 10px;
+    }
+
+    #photoCircle2 {
+        top: 10px;
+        right: 10px;
     }
 
     #photoCircle img,
@@ -541,15 +552,20 @@ button.selected~#photoCircle2 {
         width: 100%; /* Ensure the photo inside the circle takes up the full width */
         height: 100%;
         object-fit: cover;
+        border-radius: 50%; /* Ensure the photo is circular */
     }
 
     .letter-image {
-        width: 100px; /* Adjust envelope width for small screens */
-        height: 100px; /* Adjust envelope height for small screens */
+        width: 80px; /* Adjust envelope width for small screens */
+        height: 80px; /* Adjust envelope height for small screens */
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .letter-image:hover .animated-mail {
-        transform: translateY(30px); /* Adjust envelope animation translation for small screens */
+        transform: translateY(20px); /* Adjust envelope animation translation for small screens */
     }
 
     .letter-image:hover .animated-mail .top-fold {
@@ -559,20 +575,22 @@ button.selected~#photoCircle2 {
     }
 
     .letter-image:hover .animated-mail .letter {
-        height: 120px; /* Adjust letter height for small screens */
+        height: 80px; /* Adjust letter height for small screens */
     }
 
     .shadow {
-        width: 150px; /* Adjust shadow width for small screens */
+        width: 80px; /* Adjust shadow width for small screens */
     }
 
     .envelope-title {
-        font-size: 16px; /* Adjust envelope title font size for small screens */
-        left: 50%; /* Center the title horizontally */
-        transform: translateX(-50%);
+        font-size: 12px; /* Adjust envelope title font size for small screens */
     }
 
     .phone-number {
-        font-size: 16px; /* Adjust phone number font size for small screens */
+        font-size: 12px; /* Adjust phone number font size for small screens */
+        position: fixed;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
