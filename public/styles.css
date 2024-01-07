@@ -511,7 +511,10 @@ button.selected~#photoCircle2 {
 
 /*dsss */
 
-@media only screen and (max-width: 650px) {
+/* Media Queries for Responsive Design */
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
     body {
         font-size: 14px;
     }
@@ -522,8 +525,7 @@ button.selected~#photoCircle2 {
     }
 
     h1 {
-        font-size: 25px;
-        ;
+        font-size: 25px; /* Remove the extra semicolon */
         /* Adjust h1 font size for small screens */
     }
 
@@ -543,15 +545,16 @@ button.selected~#photoCircle2 {
         height: 100px;
         /* Adjust photo circle height for small screens */
         position: fixed;
+        z-index: 2; /* Ensure photo circles are above other elements */
     }
 
     #photoCircle {
-        top: 5px;
+        top: 70px; /* Adjust top position to avoid overlapping header */
         left: 10px;
     }
 
     #photoCircle2 {
-        top: 5px;
+        top: 70px; /* Adjust top position to avoid overlapping header */
         right: 10px;
     }
 
@@ -602,7 +605,8 @@ button.selected~#photoCircle2 {
         position: fixed;
         bottom: 10px;
         left: 50%;
-        /* Adjust envelope title font size for small screens */
+        transform: translateX(-50%);
+        z-index: 1; /* Ensure the envelope title is below the photo circles */
     }
 
     .phone-number {
