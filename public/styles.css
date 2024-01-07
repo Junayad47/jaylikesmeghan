@@ -622,8 +622,8 @@ button.selected~#photoCircle2 {
 
     .envelope-title {
         font-size: 12px;
-        position: fixed;
-        bottom: 10px;
+        position: absolute;
+        bottom: 40px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1; /* Ensure the envelope title is below the photo circles */
@@ -632,7 +632,7 @@ button.selected~#photoCircle2 {
     .phone-number {
         font-size: 12px;
         /* Adjust phone number font size for small screens */
-        position: fixed;
+        position: absolute;
         bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
