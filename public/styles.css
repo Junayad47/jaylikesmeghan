@@ -93,7 +93,6 @@ header {
     background: linear-gradient(to right, #5555cc 50%, #180133 50%);
     color: #fff;
     text-align: center;
-    position: relative;
 }
 
 h1 {
@@ -110,7 +109,7 @@ h1 {
 h1::before,
 h1::after {
     content: '';
-    position: relative;
+    position: absolute;
     width: 20%;
     height: 3px;
     background-color: #fff;
@@ -185,7 +184,7 @@ button:focus>.heartImage {
 
 /* Photo Circle Styles */
 #photoCircle {
-    position: relative;
+    position: fixed;
     top: 80%;
     left: 20%;
     transform: translate(-50%, -50%) scale(0);
