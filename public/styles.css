@@ -605,6 +605,7 @@ button.selected~#photoCircle2 {
     .shadow {
         width: 80px;
         bottom: 90px;
+        left:97px;
         position:absolute;
         /* Adjust shadow width for small screens */
     }
@@ -613,7 +614,7 @@ button.selected~#photoCircle2 {
         font-size: 12px;
         position: absolute;
         bottom: 3px;
-        left: 95px;
+        left: 97px;
         transform: translateX(-50%);
         z-index: 1; /* Ensure the envelope title is below the photo circles */
     }
@@ -623,7 +624,7 @@ button.selected~#photoCircle2 {
         /* Adjust phone number font size for small screens */
         position: absolute;
         bottom: 30px;
-        left: 95px;
+        left: 97px;
         transform: translateX(-50%);
     }
 }
