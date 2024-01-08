@@ -294,7 +294,7 @@ button.selected~#photoCircle2 {
     height: 50%;
     width: 100%;
     position: fixed;
-    bottom: 455px;
+    bottom: 48%;
     border-radius: 1%;
     animation: snowfall 9s linear forwards infinite;
 }
