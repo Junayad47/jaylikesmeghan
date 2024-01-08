@@ -291,10 +291,10 @@ button.selected~#photoCircle2 {
     background: url(https://i.imgur.com/T0mBFg2.png);
     background-size: 400px 250px;
     background-repeat: repeat;
-    height: 1080px;
-    width: 1920px;
+    height: 50%;
+    width: 100%;
     position: fixed;
-    bottom: 455px;
+    bottom: 47%;
     border-radius: 0%;
     animation: snowfall 9s linear forwards infinite;
 }
