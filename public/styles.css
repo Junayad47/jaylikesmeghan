@@ -559,7 +559,7 @@ button:focus~#photoCircle {
 
         .letter-image {
             position: fixed;
-            bottom: 20%;
+            bottom: 7%;
             /* Adjust the distance from the bottom */
             left: 37%;
             transform: translateX(-50%);
