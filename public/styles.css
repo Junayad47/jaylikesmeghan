@@ -438,7 +438,7 @@ button:focus~#photoCircle {
     position: relative;
     font-style: italic;
     bottom: 2px;
-    left: 50%;
+    left: 70%;
     transform: translateX(-50%);
     color: rgb(0, 0, 0);
     font-size: 20px;
