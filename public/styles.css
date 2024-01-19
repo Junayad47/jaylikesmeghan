@@ -237,8 +237,8 @@ button:focus~#photoCircle {
 /* Decorative Hearts Styles */
 .hearts {
     position: absolute;
-    top: 16%;
-    left: 48%;
+    top: 13%;
+    left: 53%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
